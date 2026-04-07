@@ -2469,7 +2469,13 @@
     // Article Reader + Paywall
     // =============================================
     const FREE_ARTICLES = 2; // Non-logged-in users get 2 free reads
+    const ADMIN_EMAILS = ['tyreekb046@gmail.com']; // Admin bypass — full access, no paywall
     let articlesRead = JSON.parse(localStorage.getItem('tap_reads') || '[]');
+
+    function isAdmin() {
+      const user = auth.currentUser;
+      return user && ADMIN_EMAILS.includes(user.email);
+    }
 
     function openArticle(data) {
       const user = auth.currentUser;
@@ -2523,7 +2529,7 @@
       const textArea = document.getElementById('reader-text-area');
 
       // Decide: show full or paywall
-      const showFull = user || (!data.premium && articlesRead.length <= FREE_ARTICLES);
+      const showFull = isAdmin() || user || (!data.premium && articlesRead.length <= FREE_ARTICLES);
 
       if (showFull) {
         // Show full article
