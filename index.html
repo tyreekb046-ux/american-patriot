@@ -2573,6 +2573,26 @@
       if (e.key === 'Escape') closeReader();
     });
 
+    // Inject share bars into all cards that don't have them
+    function injectShareBars() {
+      document.querySelectorAll('.article-card, .opinion-card, .sidebar-item').forEach(el => {
+        if (el.querySelector('.share-bar')) return; // already has one
+        const h = el.querySelector('h1, h3');
+        const title = h ? h.textContent.trim().replace(/\s*Premium$/, '') : '';
+        const bar = document.createElement('div');
+        bar.className = 'share-bar';
+        bar.style.marginTop = '8px';
+        bar.innerHTML = `
+          <span>Share</span>
+          <button class="share-btn" title="Share on X" onclick="event.stopPropagation(); shareOnX('${title.replace(/'/g, "\\'")}')">X</button>
+          <button class="share-btn" title="Share on Facebook" onclick="event.stopPropagation(); shareOnFacebook('${title.replace(/'/g, "\\'")}')">f</button>
+          <button class="share-btn" title="Share via Email" onclick="event.stopPropagation(); shareViaEmail('${title.replace(/'/g, "\\'")}')">@</button>
+          <button class="share-btn" title="Copy Link" onclick="event.stopPropagation(); copyLink()">&#128279;</button>
+        `;
+        el.appendChild(bar);
+      });
+    }
+
     // Make all static article cards clickable
     function wireArticleClicks() {
       // Hero article
@@ -3098,6 +3118,7 @@
     // Initialize
     // =============================================
     wireShareButtons();
+    injectShareBars();
     wireArticleClicks();
     loadArticles();
     checkPendingPin();
