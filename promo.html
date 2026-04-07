@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promo Graphics — The American Patriot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Franklin:wght@400;600;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Libre Franklin', sans-serif; background: #111; color: #fff; padding: 40px 20px; }
+    h1 { text-align: center; font-size: 1.2rem; margin-bottom: 8px; color: #888; text-transform: uppercase; letter-spacing: 3px; }
+    p.sub { text-align: center; color: #555; margin-bottom: 40px; font-size: 0.85rem; }
+    .grid { display: flex; flex-direction: column; gap: 40px; align-items: center; }
+
+    /* Card 1: X/Twitter Post */
+    .promo-card { border-radius: 12px; overflow: hidden; position: relative; }
+
+    .twitter-post {
+      width: 600px; height: 338px;
+      background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f3460 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 40px;
+    }
+    .twitter-post .stars { color: #C5A55A; font-size: 1.5rem; letter-spacing: 8px; margin-bottom: 12px; }
+    .twitter-post .logo { font-family: 'UnifrakturMaguntia', cursive; font-size: 2rem; margin-bottom: 6px; }
+    .twitter-post .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.85rem; color: #888; margin-bottom: 20px; }
+    .twitter-post .headline { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 900; line-height: 1.3; max-width: 450px; margin-bottom: 16px; }
+    .twitter-post .cta { display: inline-block; background: #C5A55A; color: #1a1a2e; padding: 10px 28px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; border-radius: 4px; }
+    .twitter-post .url { position: absolute; bottom: 16px; font-size: 0.65rem; color: #555; letter-spacing: 1px; }
+
+    /* Card 2: Instagram Story */
+    .ig-story {
+      width: 360px; height: 640px;
+      background: linear-gradient(180deg, #8B0000 0%, #4a0000 40%, #1a1a2e 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 40px 30px;
+    }
+    .ig-story .stars { color: #C5A55A; font-size: 2rem; letter-spacing: 10px; margin-bottom: 16px; }
+    .ig-story .logo { font-family: 'UnifrakturMaguntia', cursive; font-size: 2.2rem; margin-bottom: 4px; }
+    .ig-story .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-bottom: 30px; }
+    .ig-story .divider { width: 60px; height: 2px; background: #C5A55A; margin-bottom: 30px; }
+    .ig-story .headline { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; line-height: 1.3; margin-bottom: 16px; }
+    .ig-story .desc { font-size: 0.82rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 30px; }
+    .ig-story .cta { display: inline-block; border: 2px solid #C5A55A; color: #C5A55A; padding: 14px 36px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; border-radius: 30px; }
+    .ig-story .url { position: absolute; bottom: 24px; font-size: 0.7rem; color: rgba(255,255,255,0.4); letter-spacing: 1px; }
+
+    /* Card 3: Facebook Banner */
+    .fb-banner {
+      width: 820px; height: 312px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      display: flex; align-items: center; padding: 0 50px;
+      position: relative; overflow: hidden;
+    }
+    .fb-banner::before {
+      content: ''; position: absolute; right: -80px; top: -80px;
+      width: 350px; height: 350px;
+      background: radial-gradient(circle, rgba(197,165,90,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .fb-banner .left { flex: 1; }
+    .fb-banner .stars { color: #C5A55A; font-size: 1.2rem; letter-spacing: 6px; margin-bottom: 10px; }
+    .fb-banner .logo { font-family: 'UnifrakturMaguntia', cursive; font-size: 2.4rem; margin-bottom: 4px; }
+    .fb-banner .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.8rem; color: #888; margin-bottom: 16px; }
+    .fb-banner .desc { font-size: 0.82rem; color: #aaa; line-height: 1.5; max-width: 350px; margin-bottom: 16px; }
+    .fb-banner .cta { display: inline-block; background: #C5A55A; color: #1a1a2e; padding: 10px 24px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; border-radius: 4px; }
+    .fb-banner .right { text-align: right; position: relative; z-index: 1; }
+    .fb-banner .right .price-box { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px 30px; text-align: center; }
+    .fb-banner .right .from { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 4px; }
+    .fb-banner .right .price { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; }
+    .fb-banner .right .price span { font-size: 1rem; color: #888; }
+    .fb-banner .right .save { font-size: 0.7rem; color: #C5A55A; margin-top: 4px; }
+
+    /* Card 4: Truth Social / Rumble Square */
+    .square-post {
+      width: 500px; height: 500px;
+      background: linear-gradient(180deg, #0f3460 0%, #1a1a2e 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 40px;
+      position: relative;
+    }
+    .square-post .flag { font-size: 3rem; margin-bottom: 16px; }
+    .square-post .logo { font-family: 'UnifrakturMaguntia', cursive; font-size: 2.4rem; margin-bottom: 8px; }
+    .square-post .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.85rem; color: #888; margin-bottom: 24px; }
+    .square-post .bullets { text-align: left; margin-bottom: 24px; }
+    .square-post .bullets div { font-size: 0.85rem; color: #ccc; padding: 6px 0; display: flex; align-items: center; gap: 10px; }
+    .square-post .bullets .check { color: #C5A55A; font-weight: 700; }
+    .square-post .cta { display: inline-block; background: #8B0000; color: #fff; padding: 14px 36px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; border-radius: 4px; }
+    .square-post .url { position: absolute; bottom: 20px; font-size: 0.65rem; color: #555; letter-spacing: 1px; }
+
+    .label { text-align: center; color: #C5A55A; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; font-weight: 700; }
+    .tip { text-align: center; color: #555; font-size: 0.72rem; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Promotional Graphics</h1>
+  <p class="sub">Right-click any graphic → Save Image As → Post everywhere</p>
+
+  <div class="grid">
+
+    <!-- X / Twitter -->
+    <div>
+      <div class="label">X / Twitter Post (1200x675)</div>
+      <div class="promo-card twitter-post">
+        <div class="stars">&#9733; &#9733; &#9733;</div>
+        <div class="logo">The American Patriot</div>
+        <div class="tagline">"Faith, Freedom & the Republic"</div>
+        <div class="headline">The News They Don't Want You to Read.</div>
+        <div class="cta">Subscribe Free &rarr;</div>
+        <div class="url">american-patriot.onrender.com</div>
+      </div>
+      <div class="tip">Caption: "Tired of mainstream media spin? Get bold conservative opinion delivered daily. Link in bio. #MAGA #ConservativeMedia #PatriotNews"</div>
+    </div>
+
+    <!-- Instagram Story -->
+    <div>
+      <div class="label">Instagram Story (1080x1920)</div>
+      <div class="promo-card ig-story">
+        <div class="stars">&#9733; &#9733; &#9733;</div>
+        <div class="logo">The American Patriot</div>
+        <div class="tagline">"Faith, Freedom & the Republic"</div>
+        <div class="divider"></div>
+        <div class="headline">Independent. Unapologetic. Conservative.</div>
+        <div class="desc">Bold opinion and analysis the mainstream media won't touch. Subscribe and support independent voices.</div>
+        <div class="cta">Read Now &rarr;</div>
+        <div class="url">american-patriot.onrender.com</div>
+      </div>
+      <div class="tip">Add "Link" sticker pointing to american-patriot.onrender.com</div>
+    </div>
+
+    <!-- Facebook Cover -->
+    <div>
+      <div class="label">Facebook Cover / Ad (820x312)</div>
+      <div class="promo-card fb-banner">
+        <div class="left">
+          <div class="stars">&#9733; &#9733; &#9733;</div>
+          <div class="logo">The American Patriot</div>
+          <div class="tagline">"Faith, Freedom & the Republic"</div>
+          <div class="desc">Bold conservative opinion, commentary, and analysis. Reader-supported independent media.</div>
+          <div class="cta">Subscribe Today</div>
+        </div>
+        <div class="right">
+          <div class="price-box">
+            <div class="from">Starting at</div>
+            <div class="price">$5<span>/mo</span></div>
+            <div class="save">or $39/yr (save 35%)</div>
+          </div>
+        </div>
+      </div>
+      <div class="tip">Use as Facebook page cover or boost as an ad targeting conservatives 25-65</div>
+    </div>
+
+    <!-- Truth Social / Rumble Square -->
+    <div>
+      <div class="label">Truth Social / Rumble / Telegram (1080x1080)</div>
+      <div class="promo-card square-post">
+        <div class="flag">&#127482;&#127480;</div>
+        <div class="logo">The American Patriot</div>
+        <div class="tagline">"Faith, Freedom & the Republic"</div>
+        <div class="bullets">
+          <div><span class="check">&#10003;</span> Unlimited conservative opinion & analysis</div>
+          <div><span class="check">&#10003;</span> 30+ expert commentators</div>
+          <div><span class="check">&#10003;</span> No mainstream media censorship</div>
+          <div><span class="check">&#10003;</span> Ad-free reading option</div>
+          <div><span class="check">&#10003;</span> Support independent journalism</div>
+        </div>
+        <div class="cta">Join The Movement</div>
+        <div class="url">american-patriot.onrender.com</div>
+      </div>
+      <div class="tip">Caption: "We don't answer to corporate media. We answer to YOU. Join The American Patriot today. Link below."</div>
+    </div>
+
+  </div>
+</body>
+</html>
