@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: american-patriot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: BASE_URL
+        sync: false

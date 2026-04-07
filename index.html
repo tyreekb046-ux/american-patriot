@@ -1,0 +1,3108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The American Patriot — Faith, Freedom & the Republic</title>
+  <meta name="description" content="The American Patriot delivers bold conservative opinion, commentary, and analysis on politics, faith, culture, and the American way of life.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The American Patriot — Faith, Freedom & the Republic">
+  <meta property="og:description" content="Bold conservative opinion, commentary, and analysis. Reader-supported independent media.">
+  <meta property="og:url" content="https://theamericanpatriot.com">
+  <meta property="og:site_name" content="The American Patriot">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The American Patriot">
+  <meta name="twitter:description" content="Bold conservative opinion, commentary, and analysis. Reader-supported independent media.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L61NLD2B0W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L61NLD2B0W');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7521198983651522" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #121212;
+      --secondary: #333;
+      --accent: #8B0000;
+      --accent-hover: #6b0000;
+      --gold: #C5A55A;
+      --border: #ccc;
+      --bg: #faf9f6;
+      --light-bg: #f0efec;
+      --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --sans: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+      --gothic: 'UnifrakturMaguntia', cursive;
+    }
+
+    [data-theme="dark"] {
+      --primary: #e8e8e8;
+      --secondary: #ccc;
+      --bg: #1a1a1a;
+      --light-bg: #252525;
+      --border: #444;
+    }
+    [data-theme="dark"] body { color: var(--primary); }
+    [data-theme="dark"] .hero-image-placeholder,
+    [data-theme="dark"] .article-card .card-image { background: linear-gradient(135deg, #333 0%, #444 50%, #333 100%); color: #666; }
+    [data-theme="dark"] .hero-main .summary,
+    [data-theme="dark"] .article-card p,
+    [data-theme="dark"] .opinion-card p { color: #aaa; }
+    [data-theme="dark"] .hero-main .byline,
+    [data-theme="dark"] .article-card .byline,
+    [data-theme="dark"] .sidebar-item .byline { color: #777; }
+    [data-theme="dark"] .sidebar-item p { color: #999; }
+    [data-theme="dark"] .top-bar { color: #888; border-color: var(--border); }
+    [data-theme="dark"] .top-bar-links a { color: #999; }
+    [data-theme="dark"] .footer-col a { color: #888; }
+    [data-theme="dark"] .footer-bottom { color: #666; }
+    [data-theme="dark"] .newsletter input { background: #333; border-color: #555; color: #eee; }
+    [data-theme="dark"] .ad-unit { background: #252525; border-color: #444; color: #666; }
+    [data-theme="dark"] .opinion-card .author-title { color: #777; }
+    [data-theme="dark"] .opinion-card .author-avatar { background: #555; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Editorial Disclaimer Banner */
+    .disclaimer-banner {
+      background: #fff3cd;
+      color: #856404;
+      text-align: center;
+      padding: 8px 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #ffc107;
+    }
+    [data-theme="dark"] .disclaimer-banner {
+      background: #3d3200;
+      color: #ffc107;
+      border-color: #665200;
+    }
+    .disclaimer-banner svg {
+      width: 14px;
+      height: 14px;
+      vertical-align: -2px;
+      margin-right: 4px;
+      fill: currentColor;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 8px 20px;
+      font-size: 0.75rem;
+      color: #666;
+      border-bottom: 1px solid var(--border);
+    }
+    .top-bar-date { font-weight: 500; }
+    .top-bar-links { display: flex; align-items: center; gap: 4px; }
+    .top-bar-links a { margin-left: 12px; font-weight: 500; color: #555; }
+    .top-bar-links a:hover { color: var(--accent); text-decoration: none; }
+    .dark-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 3px 8px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      color: inherit;
+      margin-left: 8px;
+    }
+
+    /* Masthead */
+    .masthead {
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 20px 16px;
+      border-bottom: 2px solid var(--primary);
+    }
+    .masthead-flag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 4px;
+    }
+    .flag-icon { font-size: 1.5rem; }
+    .masthead-title {
+      font-family: var(--gothic);
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+    .masthead-tagline {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    /* Breaking News Ticker */
+    .ticker-wrap {
+      background: var(--accent);
+      color: #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 8px 0;
+    }
+    .ticker {
+      display: inline-block;
+      animation: ticker 30s linear infinite;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .ticker span { margin-right: 60px; }
+    .ticker .label {
+      background: #fff;
+      color: var(--accent);
+      padding: 2px 8px;
+      margin-right: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(100vw); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Navigation */
+    .main-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+      gap: 4px;
+    }
+    .main-nav li a {
+      display: block;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--secondary);
+      transition: color 0.2s;
+    }
+    .main-nav li a:hover,
+    .main-nav li a.active {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .nav-cta {
+      background: var(--accent) !important;
+      color: #fff !important;
+      border-radius: 3px;
+      padding: 6px 18px !important;
+    }
+    .nav-cta:hover { background: var(--accent-hover) !important; }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--primary);
+      padding: 10px 20px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Ad Units */
+    .ad-unit {
+      background: #f5f5f5;
+      border: 1px dashed #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    .ad-banner {
+      height: 90px;
+      max-width: 728px;
+      margin: 20px auto;
+    }
+    .ad-sidebar {
+      height: 250px;
+      margin-top: 20px;
+    }
+    .ad-in-article {
+      height: 250px;
+      margin: 24px 0;
+    }
+    .ad-sticky-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      z-index: 999;
+      background: #f5f5f5;
+      border-top: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    .ad-sticky-footer .ad-close {
+      position: absolute;
+      right: 16px;
+      top: 4px;
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #666;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+      padding: 30px 0;
+    }
+    .hero-main {
+      padding-right: 30px;
+      border-right: 1px solid var(--border);
+    }
+    .hero-main img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      background: #ddd;
+    }
+    .hero-image-placeholder {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(135deg, #c4c4c4 0%, #e8e8e8 50%, #c4c4c4 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+    .hero-main .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      margin: 16px 0 8px;
+    }
+    .hero-main h1 {
+      font-family: var(--serif);
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .hero-main .summary {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    .hero-main .byline {
+      font-size: 0.75rem;
+      color: #888;
+      font-weight: 500;
+    }
+
+    /* Sidebar Headlines */
+    .hero-sidebar {
+      padding-left: 30px;
+    }
+    .sidebar-section-title {
+      font-family: var(--serif);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .sidebar-item {
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .sidebar-item:last-child { border-bottom: none; }
+    .sidebar-item h3 {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+    .sidebar-item p {
+      font-size: 0.82rem;
+      color: #555;
+      line-height: 1.5;
+    }
+    .sidebar-item .byline {
+      font-size: 0.7rem;
+      color: #999;
+      margin-top: 4px;
+    }
+
+    /* Section Headers */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 36px 0 20px;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 8px;
+    }
+    .section-header h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .section-header .line { flex: 1; height: 1px; background: var(--border); }
+
+    /* Article Grid */
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-card { transition: transform 0.15s; }
+    .article-card:hover { transform: translateY(-2px); }
+    .sidebar-item:hover h3, .opinion-card:hover h3 { color: var(--accent); }
+    .hero-main:hover h1 { color: var(--accent); }
+    .article-card .card-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #d4d4d4 0%, #eee 50%, #d4d4d4 100%);
+      margin-bottom: 12px;
+    }
+    .article-card .category-tag {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .article-card h3 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+    .article-card p {
+      font-size: 0.85rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .article-card .byline {
+      font-size: 0.7rem;
+      color: #999;
+    }
+
+    /* Premium Lock */
+    .premium-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--gold);
+      color: #fff;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .premium-badge svg {
+      width: 10px;
+      height: 10px;
+      fill: #fff;
+    }
+
+    /* Opinion Section */
+    .opinion-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+    .opinion-card {
+      padding: 24px;
+      background: var(--light-bg);
+      border-left: 4px solid var(--accent);
+    }
+    .opinion-card .category-tag {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .opinion-card h3 {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .opinion-card p {
+      font-size: 0.88rem;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    .opinion-card .author-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .opinion-card .author-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+    .opinion-card .author-name {
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .opinion-card .author-title {
+      font-size: 0.7rem;
+      color: #888;
+    }
+
+    /* Editorial Spotlight */
+    .editorial-spotlight {
+      margin: 36px 0;
+      padding: 40px;
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+    }
+    [data-theme="dark"] .editorial-spotlight { background: #2a2a2a; }
+    .editorial-spotlight .label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ccc;
+      margin-bottom: 12px;
+    }
+    .editorial-spotlight h2 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .editorial-spotlight p {
+      font-size: 0.95rem;
+      color: #bbb;
+      max-width: 600px;
+      margin: 0 auto 16px;
+      line-height: 1.7;
+    }
+    .editorial-spotlight .read-more {
+      display: inline-block;
+      border: 1px solid #fff;
+      padding: 10px 28px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+      transition: all 0.2s;
+    }
+    .editorial-spotlight .read-more:hover {
+      background: #fff;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    /* Subscription CTA Section */
+    .subscribe-cta {
+      margin: 36px 0;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      padding: 50px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .subscribe-cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(197,165,90,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .subscribe-cta .sub-label {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 4px 16px;
+      margin-bottom: 16px;
+    }
+    .subscribe-cta h2 {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .subscribe-cta .sub-desc {
+      font-size: 1rem;
+      color: #bbb;
+      max-width: 550px;
+      margin: 0 auto 24px;
+      line-height: 1.7;
+    }
+    .subscribe-cta .pricing-row {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .price-option {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 20px 30px;
+      min-width: 180px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .price-option:hover, .price-option.featured {
+      border-color: var(--gold);
+      background: rgba(197,165,90,0.1);
+    }
+    .price-option.featured { position: relative; }
+    .price-option.featured::after {
+      content: 'BEST VALUE';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: #1a1a2e;
+      font-size: 0.55rem;
+      font-weight: 800;
+      padding: 2px 10px;
+      border-radius: 10px;
+      letter-spacing: 1px;
+    }
+    .price-option .period {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #aaa;
+      margin-bottom: 4px;
+    }
+    .price-option .amount {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 900;
+    }
+    .price-option .amount span {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: #aaa;
+    }
+    .price-option .savings {
+      font-size: 0.7rem;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+    .subscribe-cta .sub-benefits {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: #ccc;
+      margin-top: 16px;
+    }
+    .subscribe-cta .sub-benefits span::before {
+      content: '\2713';
+      color: var(--gold);
+      margin-right: 6px;
+      font-weight: 700;
+    }
+    .btn-subscribe {
+      display: inline-block;
+      background: var(--gold);
+      color: #1a1a2e;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 14px 40px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 20px;
+    }
+    .btn-subscribe:hover {
+      background: #d4b76a;
+      text-decoration: none;
+    }
+
+    /* Donation Section */
+    .donate-section {
+      margin: 36px 0;
+      padding: 40px;
+      background: var(--light-bg);
+      border: 2px solid var(--border);
+      text-align: center;
+    }
+    .donate-section h3 {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .donate-section .donate-desc {
+      font-size: 0.9rem;
+      color: #555;
+      max-width: 500px;
+      margin: 0 auto 20px;
+      line-height: 1.7;
+    }
+    [data-theme="dark"] .donate-section .donate-desc { color: #aaa; }
+    .donate-tiers {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .donate-tier {
+      background: #fff;
+      border: 2px solid var(--border);
+      padding: 10px 24px;
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-radius: 4px;
+    }
+    [data-theme="dark"] .donate-tier { background: #333; }
+    .donate-tier:hover, .donate-tier.active {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .donate-custom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .donate-custom input {
+      width: 120px;
+      padding: 10px 14px;
+      border: 2px solid var(--border);
+      font-size: 1rem;
+      font-family: var(--sans);
+      text-align: center;
+      border-radius: 4px;
+    }
+    [data-theme="dark"] .donate-custom input { background: #333; color: #eee; }
+    .btn-donate {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 14px 40px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-donate:hover {
+      background: var(--accent-hover);
+      text-decoration: none;
+    }
+    .donate-note {
+      font-size: 0.7rem;
+      color: #999;
+      margin-top: 12px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+      margin: 30px 0;
+      padding: 30px;
+      background: var(--light-bg);
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .newsletter h3 {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+    .newsletter p {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 16px;
+    }
+    [data-theme="dark"] .newsletter p { color: #aaa; }
+    .newsletter form {
+      display: flex;
+      max-width: 420px;
+      margin: 0 auto;
+      gap: 8px;
+    }
+    .newsletter input {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1px solid #bbb;
+      font-size: 0.85rem;
+      font-family: var(--sans);
+    }
+    .newsletter button {
+      padding: 10px 24px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .newsletter button:hover { background: var(--accent-hover); }
+
+    /* Social Share Bar */
+    .share-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 0;
+    }
+    .share-bar span {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #999;
+    }
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--light-bg);
+      border: 1px solid var(--border);
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--secondary);
+    }
+    .share-btn:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    /* Paywall Overlay */
+    .paywall-overlay {
+      position: relative;
+      margin: 30px 0;
+    }
+    .paywall-content {
+      max-height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    .paywall-content::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(transparent, var(--bg));
+    }
+    .paywall-gate {
+      text-align: center;
+      padding: 30px 20px;
+      border: 1px solid var(--border);
+      background: var(--light-bg);
+      margin-top: -20px;
+      position: relative;
+      z-index: 1;
+    }
+    .paywall-gate h3 {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+    .paywall-gate p {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 16px;
+    }
+    [data-theme="dark"] .paywall-gate p { color: #aaa; }
+    .paywall-gate .btn-subscribe {
+      font-size: 0.8rem;
+      padding: 12px 32px;
+    }
+    .paywall-gate .login-link {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.75rem;
+      color: #888;
+    }
+
+    /* Article Reader Modal */
+    .reader-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 10000;
+      overflow-y: auto;
+    }
+    .reader-overlay.active { display: block; }
+    .reader-modal {
+      background: var(--bg);
+      max-width: 750px;
+      margin: 40px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      min-height: 60vh;
+    }
+    .reader-close {
+      position: fixed;
+      top: 16px;
+      right: 24px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 10001;
+    }
+    .reader-close:hover { background: rgba(0,0,0,0.8); }
+    .reader-hero-img {
+      width: 100%;
+      height: 300px;
+      background: linear-gradient(135deg, #c4c4c4 0%, #e8e8e8 50%, #c4c4c4 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-style: italic;
+    }
+    [data-theme="dark"] .reader-hero-img { background: linear-gradient(135deg, #333 0%, #444 50%, #333 100%); }
+    .reader-body {
+      padding: 30px 40px;
+    }
+    .reader-body .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .reader-body h1 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .reader-body .byline {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .reader-article-text {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #333;
+    }
+    [data-theme="dark"] .reader-article-text { color: #ccc; }
+    .reader-article-text p { margin-bottom: 18px; }
+    .reader-fade {
+      position: relative;
+      max-height: 280px;
+      overflow: hidden;
+    }
+    .reader-fade::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: linear-gradient(transparent, var(--bg));
+      pointer-events: none;
+    }
+    .reader-paywall {
+      text-align: center;
+      padding: 30px 40px 40px;
+      border-top: 1px solid var(--border);
+      background: var(--light-bg);
+    }
+    .reader-paywall .lock-icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .reader-paywall h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .reader-paywall p {
+      font-size: 0.88rem;
+      color: #666;
+      max-width: 450px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+    [data-theme="dark"] .reader-paywall p { color: #aaa; }
+    .reader-paywall .btn-subscribe {
+      font-size: 0.85rem;
+      padding: 14px 36px;
+    }
+    .reader-paywall .login-link {
+      display: block;
+      margin-top: 12px;
+      font-size: 0.78rem;
+      color: #888;
+    }
+    .reader-paywall .login-link a { color: var(--accent); }
+    .reader-paywall .free-count {
+      font-size: 0.72rem;
+      color: #999;
+      margin-top: 14px;
+    }
+    @media (max-width: 600px) {
+      .reader-modal { margin: 0; border-radius: 0; min-height: 100vh; }
+      .reader-body { padding: 20px; }
+      .reader-body h1 { font-size: 1.5rem; }
+      .reader-paywall { padding: 24px 20px; }
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      border-top: 3px solid var(--primary);
+      padding: 30px 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .footer-about .footer-logo {
+      font-family: var(--gothic);
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+    .footer-about p {
+      font-size: 0.78rem;
+      color: #888;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .footer-col h4 {
+      font-family: var(--serif);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 0.8rem;
+      color: #666;
+      padding: 3px 0;
+    }
+    .footer-col a:hover { color: var(--accent); }
+
+    .footer-disclaimer {
+      max-width: 1200px;
+      margin: 16px auto 0;
+      padding: 16px 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.7rem;
+      color: #999;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #999;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* Modals */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 10000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal {
+      background: var(--bg);
+      color: var(--primary);
+      max-width: 500px;
+      width: 90%;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #999;
+      z-index: 1;
+    }
+    .modal-header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+    .modal-header h2 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      margin-bottom: 6px;
+    }
+    .modal-header p {
+      font-size: 0.85rem;
+      color: #bbb;
+    }
+    .modal-body {
+      padding: 24px 30px;
+    }
+    .modal-body label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .modal-body input,
+    .modal-body select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      font-family: var(--sans);
+      margin-bottom: 14px;
+      border-radius: 4px;
+      background: var(--bg);
+      color: var(--primary);
+    }
+    .modal-body .btn-subscribe {
+      width: 100%;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .masthead-title { font-size: 2.5rem; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-main { padding-right: 0; border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 24px; }
+      .hero-sidebar { padding-left: 0; padding-top: 24px; }
+      .article-grid { grid-template-columns: 1fr; }
+      .opinion-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .subscribe-cta h2 { font-size: 1.6rem; }
+    }
+
+    @media (max-width: 600px) {
+      .masthead-title { font-size: 1.8rem; }
+      .hero-main h1 { font-size: 1.6rem; }
+      .top-bar { flex-direction: column; gap: 4px; }
+      .editorial-spotlight { padding: 24px 16px; }
+      .editorial-spotlight h2 { font-size: 1.4rem; }
+      .newsletter form { flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .main-nav ul { display: none; }
+      .main-nav ul.open { display: flex; flex-direction: column; }
+      .mobile-menu-btn { display: block; }
+      .subscribe-cta { padding: 30px 20px; }
+      .subscribe-cta h2 { font-size: 1.4rem; }
+      .price-option { min-width: 140px; padding: 14px 20px; }
+    }
+
+    /* Comments Section */
+    .comments-section {
+      margin: 36px 0;
+      border-top: 2px solid var(--primary);
+      padding-top: 24px;
+    }
+    .comments-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .comments-header h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .comments-count {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    /* Top Comment Box */
+    .top-comment-promo {
+      background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+      color: #fff;
+      padding: 20px 24px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .top-comment-promo .promo-left {
+      flex: 1;
+      min-width: 200px;
+    }
+    .top-comment-promo h4 {
+      font-family: var(--serif);
+      font-size: 1rem;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .top-comment-promo h4 .pin-icon {
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+    .top-comment-promo p {
+      font-size: 0.78rem;
+      color: #bbb;
+      line-height: 1.5;
+    }
+    .btn-top-comment {
+      background: var(--gold);
+      color: #1a1a2e;
+      border: none;
+      padding: 10px 22px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .btn-top-comment:hover { background: #d4b76a; }
+
+    /* Pinned / Top Comment */
+    .comment-pinned {
+      border: 2px solid var(--gold);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      background: rgba(197,165,90,0.06);
+      position: relative;
+    }
+    [data-theme="dark"] .comment-pinned { background: rgba(197,165,90,0.08); }
+    .comment-pinned .pinned-label {
+      position: absolute;
+      top: -10px;
+      left: 16px;
+      background: var(--gold);
+      color: #1a1a2e;
+      font-size: 0.6rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 2px 10px;
+      border-radius: 10px;
+    }
+
+    /* Comment Form */
+    .comment-form {
+      background: var(--light-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .comment-form-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .comment-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .comment-avatar.has-user { background: var(--accent); }
+    .comment-form textarea {
+      width: 100%;
+      min-height: 80px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      resize: vertical;
+      background: var(--bg);
+      color: var(--primary);
+    }
+    .comment-form-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .comment-form-actions .top-comment-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: #888;
+    }
+    .top-comment-toggle input[type="checkbox"] { width: auto; }
+    .top-comment-toggle label { cursor: pointer; }
+    .top-comment-toggle .price {
+      background: var(--gold);
+      color: #1a1a2e;
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    .btn-comment {
+      padding: 8px 24px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .btn-comment:hover { background: var(--accent-hover); }
+
+    /* Comment List */
+    .comment-list { margin-top: 8px; }
+    .comment-item {
+      display: flex;
+      gap: 12px;
+      padding: 16px 0;
+      border-bottom: 1px solid #eee;
+    }
+    [data-theme="dark"] .comment-item { border-color: #333; }
+    .comment-item:last-child { border-bottom: none; }
+    .comment-item .comment-avatar { flex-shrink: 0; width: 36px; height: 36px; font-size: 0.85rem; }
+    .comment-body { flex: 1; }
+    .comment-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+    .comment-author {
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .comment-time {
+      font-size: 0.7rem;
+      color: #999;
+    }
+    .comment-text {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #444;
+    }
+    [data-theme="dark"] .comment-text { color: #bbb; }
+    .comment-actions {
+      display: flex;
+      gap: 14px;
+      margin-top: 6px;
+    }
+    .comment-action-btn {
+      background: none;
+      border: none;
+      font-size: 0.7rem;
+      color: #999;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .comment-action-btn:hover { color: var(--accent); }
+    .comment-action-btn .count { font-weight: 600; }
+    .comment-login-prompt {
+      text-align: center;
+      padding: 16px;
+      font-size: 0.85rem;
+      color: #888;
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .comment-login-prompt a { color: var(--accent); font-weight: 600; }
+    .sort-select {
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--bg);
+      color: var(--primary);
+      font-family: var(--sans);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Editorial Disclaimer Banner -->
+  <div class="disclaimer-banner">
+    <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 16h2v2h-2zm0-6h2v4h-2z"/></svg>
+    OPINION &amp; COMMENTARY &mdash; The American Patriot is an opinion and commentary publication. All articles represent the views of their authors and do not constitute news reporting.
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-date">Monday, April 7, 2026</div>
+    <div class="top-bar-links">
+      <a href="#" onclick="openModal('subscribe-modal'); return false;">Subscribe</a>
+      <a href="#" onclick="openModal('login-modal'); return false;" class="login-link-top">Log In</a>
+      <a href="#newsletter">Newsletters</a>
+      <a href="#donate">Donate</a>
+      <button class="dark-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">Dark</button>
+    </div>
+  </div>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="masthead-flag">
+      <span class="flag-icon">&#9733;</span>
+      <h1 class="masthead-title">The American Patriot</h1>
+      <span class="flag-icon">&#9733;</span>
+    </div>
+    <p class="masthead-tagline">&ldquo;Faith, Freedom &amp; the Republic&rdquo;</p>
+  </header>
+
+  <!-- Breaking News Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span><span class="label">Breaking</span>Senate Passes New Border Security Funding Bill in Late-Night Vote</span>
+      <span><span class="label">Alert</span>Supreme Court to Hear Landmark Second Amendment Case This Fall</span>
+      <span><span class="label">Update</span>National Debt Reaches New Milestone as Fiscal Hawks Demand Spending Cuts</span>
+      <span><span class="label">Breaking</span>GOP Leaders Announce New Energy Independence Plan</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <button class="mobile-menu-btn" onclick="document.querySelector('.main-nav ul').classList.toggle('open')">&#9776; Menu</button>
+    <ul>
+      <li><a href="#" class="active" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Home</a></li>
+      <li><a href="#politics">Politics</a></li>
+      <li><a href="#opinion">Opinion</a></li>
+      <li><a href="#" onclick="filterByCategory('Economy'); return false;">Economy</a></li>
+      <li><a href="#" onclick="filterByCategory('Second Amendment'); return false;">Second Amendment</a></li>
+      <li><a href="#" onclick="filterByCategory('Faith & Culture'); return false;">Faith &amp; Culture</a></li>
+      <li><a href="#" onclick="filterByCategory('Border & Immigration'); return false;">Border &amp; Immigration</a></li>
+      <li><a href="#" class="nav-cta" onclick="openModal('subscribe-modal'); return false;">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <!-- Leaderboard Ad -->
+  <div class="container">
+    <div class="ad-unit ad-banner">
+      <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7521198983651522" data-ad-slot="auto"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="container">
+    <section class="hero">
+      <div class="hero-main">
+        <img src="https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=800&h=400&fit=crop" alt="U.S. Capitol Building" style="width:100%;height:400px;object-fit:cover;display:block;">
+        <span class="category-tag">Politics</span>
+        <h1>Senate Passes Landmark Border Security Bill After Marathon Overnight Session</h1>
+        <p class="summary">
+          In a dramatic late-night vote, the United States Senate approved a sweeping new border security package that includes funding for physical barriers, additional Border Patrol agents, and upgraded surveillance technology along the southern border. Supporters hailed the legislation as a long-overdue step toward restoring national sovereignty.
+        </p>
+        <p class="byline">By <strong>James T. Harrison</strong> &middot; April 6, 2026 &middot; 8 min read</p>
+        <div class="share-bar">
+          <span>Share</span>
+          <button class="share-btn" title="Share on X">X</button>
+          <button class="share-btn" title="Share on Facebook">f</button>
+          <button class="share-btn" title="Share via Email">@</button>
+          <button class="share-btn" title="Copy Link">&#128279;</button>
+        </div>
+      </div>
+
+      <aside class="hero-sidebar">
+        <div class="sidebar-section-title">Top Stories</div>
+
+        <div class="sidebar-item">
+          <h3>Supreme Court Agrees to Hear Major Second Amendment Challenge</h3>
+          <p>The high court will review a circuit ruling that upheld a state-level firearms restriction, with oral arguments expected in the fall term.</p>
+          <div class="byline">By Sarah Mitchell</div>
+        </div>
+
+        <div class="sidebar-item">
+          <h3>House Republicans Unveil Plan to Slash Federal Spending by $2 Trillion</h3>
+          <p>GOP fiscal hawks presented a detailed budget roadmap targeting waste, fraud, and duplicative programs across federal agencies.</p>
+          <div class="byline">By Robert J. Clark</div>
+        </div>
+
+        <div class="sidebar-item">
+          <h3>New Poll: Voter Confidence in Economy Hits Two-Year High</h3>
+          <p>A nationwide survey shows growing optimism among likely voters about the direction of the economy heading into the midterm cycle.</p>
+          <div class="byline">By Katherine Adams</div>
+        </div>
+
+        <!-- Sidebar Ad -->
+        <div class="ad-unit ad-sidebar">
+          <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-7521198983651522" data-ad-slot="auto"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Politics Section -->
+    <section id="politics">
+      <div class="section-header">
+        <h2>Politics</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1545167496-c1e092d383a2?w=400&h=200&fit=crop');background-size:cover;background-position:center;"></div>
+          <div class="category-tag">Border Security</div>
+          <h3>Texas Governor Deploys Additional National Guard Units to Rio Grande Valley</h3>
+          <p>State officials announced the deployment of 1,500 additional National Guard troops to reinforce border operations, citing a surge in illegal crossings over the past quarter.</p>
+          <div class="byline">By Marcus Reeves &middot; April 5, 2026</div>
+        </article>
+
+        <article class="article-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?w=400&h=200&fit=crop');background-size:cover;background-position:center;"></div>
+          <div class="category-tag">Congress</div>
+          <h3>House Passes Parental Rights in Education Act Along Party Lines</h3>
+          <p>The legislation would require schools to notify parents about curriculum changes and provide opt-out provisions for controversial classroom materials.</p>
+          <div class="byline">By Rebecca Stone &middot; April 5, 2026</div>
+        </article>
+
+        <article class="article-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=200&fit=crop');background-size:cover;background-position:center;"></div>
+          <div class="category-tag">Energy</div>
+          <h3>Republican Governors Form Coalition to Expand Domestic Energy Production <span class="premium-badge"><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg> Premium</span></h3>
+          <p>A coalition of twelve governors pledged to cut regulations on oil, natural gas, and coal production in their states, calling for a return to American energy dominance.</p>
+          <div class="byline">By William Drake &middot; April 4, 2026</div>
+        </article>
+      </div>
+
+      <!-- In-Article Ad -->
+      <div class="ad-unit ad-in-article">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7521198983651522" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <div class="article-grid" style="border-bottom:none; padding-top: 0;">
+        <article class="article-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=200&fit=crop');background-size:cover;background-position:center;"></div>
+          <div class="category-tag">Judiciary</div>
+          <h3>Federal Appeals Court Upholds Religious Liberty Protections for Small Business Owners</h3>
+          <p>A three-judge panel ruled that the government cannot compel business owners to provide services that violate their sincerely held religious beliefs.</p>
+          <div class="byline">By Catherine Bell &middot; April 4, 2026</div>
+        </article>
+
+        <article class="article-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&h=200&fit=crop');background-size:cover;background-position:center;"></div>
+          <div class="category-tag">Fiscal Policy</div>
+          <h3>CBO Report Warns National Debt on Track to Surpass 130% of GDP by 2035 <span class="premium-badge"><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg> Premium</span></h3>
+          <p>The nonpartisan budget office released projections showing that without significant reforms, entitlement spending will drive the debt to unsustainable levels.</p>
+          <div class="byline">By Thomas Grant &middot; April 3, 2026</div>
+        </article>
+
+        <article class="article-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=400&h=200&fit=crop');background-size:cover;background-position:center;"></div>
+          <div class="category-tag">Election 2026</div>
+          <h3>Conservative Candidates Sweep Key Primary Races in Southern States</h3>
+          <p>Grassroots-backed challengers defeated establishment-aligned incumbents in several high-profile primary contests, signaling a shift in the party's base.</p>
+          <div class="byline">By Angela Torres &middot; April 3, 2026</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Editorial Spotlight -->
+    <div class="editorial-spotlight">
+      <div class="label">Editor&rsquo;s Pick</div>
+      <h2>The Case for Constitutional Originalism in an Age of Judicial Activism</h2>
+      <p>As the courts increasingly shape policy from the bench, a return to the original meaning of the Constitution has never been more important for preserving the separation of powers.</p>
+      <a href="#" class="read-more" onclick="openArticle({title:'The Case for Constitutional Originalism in an Age of Judicial Activism',summary:'As the courts increasingly shape policy from the bench, a return to the original meaning of the Constitution has never been more important for preserving the separation of powers.',author:'The Editorial Board',category:'Opinion',date:'April 7, 2026',premium:true}); return false;">Read the Full Editorial</a>
+    </div>
+
+    <!-- Paywall Content Example -->
+    <div class="paywall-overlay">
+      <div class="paywall-content">
+        <div class="section-header" style="margin-top:0;">
+          <h2>Exclusive Analysis</h2>
+          <div class="line"></div>
+        </div>
+        <article style="font-family: var(--serif); font-size: 1.1rem; line-height: 1.8; color: #444;">
+          <h3 style="font-size: 1.6rem; margin-bottom: 16px; color: var(--primary);">Behind the Border Bill: What the Senate Vote Really Means for Immigration Policy</h3>
+          <p>The passage of the Secure Borders Act represents a seismic shift in how Washington approaches immigration enforcement. For the first time in decades, a bipartisan supermajority has endorsed a framework that prioritizes physical barriers, technological surveillance, and expedited removal proceedings over the catch-and-release policies that have defined border management for years.</p>
+          <p style="margin-top:12px;">But the real story isn't just about the vote itself — it's about what happens next. Legal challenges are already being prepared by advocacy groups who argue that several provisions of the bill violate due process protections. Meanwhile, implementation faces logistical hurdles that could delay construction projects and technology deployments by months, if not years...</p>
+        </article>
+      </div>
+      <div class="paywall-gate">
+        <h3>This article is for subscribers only</h3>
+        <p>Get unlimited access to exclusive analysis, investigative commentary, and premium content.</p>
+        <button class="btn-subscribe" onclick="openModal('subscribe-modal')">Subscribe Now &mdash; Starting at $5/mo</button>
+        <a href="#" class="login-link" onclick="openModal('login-modal'); return false;">Already a subscriber? Log in</a>
+      </div>
+    </div>
+
+    <!-- Opinion Section -->
+    <section id="opinion">
+      <div class="section-header">
+        <h2>Opinion &amp; Commentary</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="opinion-grid">
+        <article class="opinion-card">
+          <div class="category-tag">Opinion</div>
+          <h3>School Choice Is the Civil Rights Issue of Our Time</h3>
+          <p>Every parent — regardless of income or zip code — deserves the right to choose the best educational environment for their children. The monopoly of failing public schools must end.</p>
+          <div class="author-row">
+            <img class="author-avatar" src="https://i.pravatar.cc/80?img=24" alt="Dr. Patricia Owens">
+            <div>
+              <div class="author-name">Dr. Patricia Owens</div>
+              <div class="author-title">Education Policy Fellow</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="opinion-card">
+          <div class="category-tag">Opinion</div>
+          <h3>Why America Must Return to Energy Independence</h3>
+          <p>Relying on foreign nations for our energy needs undermines our national security and puts hardworking American families at the mercy of volatile global markets.</p>
+          <div class="author-row">
+            <img class="author-avatar" src="https://i.pravatar.cc/80?img=53" alt="Sen. James McAllister">
+            <div>
+              <div class="author-name">Sen. James McAllister</div>
+              <div class="author-title">U.S. Senator (R-TX)</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="opinion-card">
+          <div class="category-tag">Opinion</div>
+          <h3>The Second Amendment Is Not Up for Debate</h3>
+          <p>The right to keep and bear arms is enshrined in our Constitution. No bureaucratic regulation or activist court ruling can override the fundamental liberties of law-abiding citizens.</p>
+          <div class="author-row">
+            <img class="author-avatar" src="https://i.pravatar.cc/80?img=52" alt="Mark Davidson">
+            <div>
+              <div class="author-name">Mark Davidson</div>
+              <div class="author-title">Constitutional Attorney</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="opinion-card">
+          <div class="category-tag">Opinion</div>
+          <h3>Big Tech Censorship Threatens the Marketplace of Ideas</h3>
+          <p>When a handful of Silicon Valley executives decide what Americans can say online, free speech exists in name only. It is time for real accountability and transparency.</p>
+          <div class="author-row">
+            <img class="author-avatar" src="https://i.pravatar.cc/80?img=25" alt="Laura Ingram-West">
+            <div>
+              <div class="author-name">Laura Ingram-West</div>
+              <div class="author-title">Media Analyst &amp; Commentator</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments-section" id="comments">
+      <div class="comments-header">
+        <h2>Reader Comments</h2>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <span class="comments-count" id="comment-count">0 comments</span>
+          <select class="sort-select" id="comment-sort" onchange="renderComments()">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+            <option value="popular">Most Liked</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Top Comment Promo -->
+      <div class="top-comment-promo">
+        <div class="promo-left">
+          <h4><span class="pin-icon">&#128204;</span> Pin Your Comment to the Top</h4>
+          <p>Want your voice heard first? Pay $5 to pin your comment at the top of the discussion for 24 hours. Stand out from the crowd.</p>
+        </div>
+        <button class="btn-top-comment" onclick="openModal('top-comment-modal')">Get Top Spot &mdash; $5</button>
+      </div>
+
+      <!-- Pinned Comments Area -->
+      <div id="pinned-comments"></div>
+
+      <!-- Comment Form -->
+      <div id="comment-form-area"></div>
+
+      <!-- Comment List -->
+      <div class="comment-list" id="comment-list">
+        <div style="text-align:center; padding:30px; color:#999; font-size:0.85rem;">
+          Be the first to share your thoughts.
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription CTA -->
+    <section class="subscribe-cta" id="subscribe">
+      <div class="sub-label">Patriot Membership</div>
+      <h2>Join the Movement. Support Independent Conservative Voices.</h2>
+      <p class="sub-desc">Your subscription funds the journalism the mainstream media won't touch. Get exclusive analysis, ad-free reading, and members-only content.</p>
+
+      <div class="pricing-row">
+        <div class="price-option" onclick="selectPlan(this, 'monthly')">
+          <div class="period">Monthly</div>
+          <div class="amount">$5<span>/mo</span></div>
+        </div>
+        <div class="price-option featured" onclick="selectPlan(this, 'annual')">
+          <div class="period">Annual</div>
+          <div class="amount">$39<span>/yr</span></div>
+          <div class="savings">Save 35%</div>
+        </div>
+        <div class="price-option" onclick="selectPlan(this, 'founding')">
+          <div class="period">Founding Member</div>
+          <div class="amount">$99<span>/yr</span></div>
+          <div class="savings">Name on the masthead</div>
+        </div>
+      </div>
+
+      <button class="btn-subscribe" onclick="openModal('subscribe-modal')">Start Your Membership</button>
+
+      <div class="sub-benefits">
+        <span>Unlimited access</span>
+        <span>Ad-free option</span>
+        <span>Exclusive columns</span>
+        <span>Member forums</span>
+        <span>Cancel anytime</span>
+      </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donate-section" id="donate">
+      <h3>Support Independent Media</h3>
+      <p class="donate-desc">The American Patriot is reader-supported. Your tax-deductible donation keeps our lights on and our editorial independent.</p>
+
+      <div class="donate-tiers">
+        <button class="donate-tier" onclick="selectDonation(this, 10)">$10</button>
+        <button class="donate-tier active" onclick="selectDonation(this, 25)">$25</button>
+        <button class="donate-tier" onclick="selectDonation(this, 50)">$50</button>
+        <button class="donate-tier" onclick="selectDonation(this, 100)">$100</button>
+        <button class="donate-tier" onclick="selectDonation(this, 250)">$250</button>
+      </div>
+
+      <div class="donate-custom">
+        <span style="font-size:0.85rem;">Or enter custom amount: $</span>
+        <input type="number" id="custom-donation" placeholder="0" min="1">
+      </div>
+
+      <button class="btn-donate" onclick="processDonation()">Donate Now</button>
+      <p class="donate-note">Secure payment processed via Stripe. You will receive a receipt via email.</p>
+    </section>
+
+    <!-- Dynamic Articles from Backend -->
+    <section id="latest-news" style="display:none;">
+      <div class="section-header">
+        <h2>Latest Stories</h2>
+        <div class="line"></div>
+      </div>
+      <div class="article-grid" id="dynamic-articles"></div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <div class="newsletter" id="newsletter">
+      <h3>Stay Informed. Stay Free.</h3>
+      <p>Get the top conservative opinion and commentary delivered straight to your inbox every morning.</p>
+      <form onsubmit="event.preventDefault(); subscribeNewsletter(this);">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-unit ad-banner">
+      <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7521198983651522" data-ad-slot="auto"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">The American Patriot</div>
+        <p>An independent opinion and commentary publication dedicated to faith, freedom, and the principles that built America. All content represents the views of individual authors and contributors.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <a href="#politics">Politics</a>
+        <a href="#opinion">Opinion</a>
+        <a href="#" onclick="filterByCategory('Economy'); return false;">Economy</a>
+        <a href="#" onclick="filterByCategory('Second Amendment'); return false;">Second Amendment</a>
+        <a href="#" onclick="filterByCategory('Faith & Culture'); return false;">Faith &amp; Culture</a>
+        <a href="#" onclick="filterByCategory('Border & Immigration'); return false;">Border &amp; Immigration</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#subscribe">Subscribe</a>
+        <a href="#donate">Donate</a>
+        <a href="mailto:advertise@theamericanpatriot.com">Advertise With Us</a>
+        <a href="mailto:contact@theamericanpatriot.com">Contact</a>
+        <a href="mailto:careers@theamericanpatriot.com">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <a href="https://x.com" target="_blank" rel="noopener">X (Twitter)</a>
+        <a href="https://truthsocial.com" target="_blank" rel="noopener">Truth Social</a>
+        <a href="https://rumble.com" target="_blank" rel="noopener">Rumble</a>
+        <a href="https://telegram.org" target="_blank" rel="noopener">Telegram</a>
+        <a href="#newsletter">RSS Feed</a>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <strong>Editorial Disclaimer:</strong> The American Patriot is an opinion and commentary publication. Content published on this site represents the views and opinions of individual authors and contributors. This publication does not claim to present unbiased or objective news reporting. Readers are encouraged to seek out multiple sources and form their own conclusions. Paid advertisements and sponsored content are clearly labeled. The American Patriot is not affiliated with any political party, campaign, or government entity.
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 The American Patriot. All rights reserved. &middot; <a href="#" onclick="alert('Privacy Policy: We collect email addresses for subscriptions and use cookies for analytics. We never sell your data.'); return false;">Privacy Policy</a> &middot; <a href="#" onclick="alert('Terms of Service: By using this site you agree to our editorial disclaimer. All content is opinion and commentary. Subscriptions can be canceled anytime.'); return false;">Terms of Service</a> &middot; <a href="#" onclick="alert('Advertising Policy: All paid advertisements and sponsored content are clearly labeled. Editorial content is independent of advertiser influence.'); return false;">Advertising Policy</a> &middot; <a href="#" onclick="alert('Ethics & Standards: The American Patriot is an opinion publication. We are transparent about our editorial perspective and encourage readers to seek multiple sources.'); return false;">Ethics &amp; Standards</a>
+    </div>
+  </footer>
+
+  <!-- Sticky Footer Ad -->
+  <div class="ad-sticky-footer" id="stickyAd">
+    <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px" data-ad-client="ca-pub-7521198983651522" data-ad-slot="auto"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <button class="ad-close" onclick="document.getElementById('stickyAd').style.display='none'">&times;</button>
+  </div>
+
+  <!-- Article Reader Modal -->
+  <div class="reader-overlay" id="reader-overlay">
+    <button class="reader-close" onclick="closeReader()">&times;</button>
+    <div class="reader-modal">
+      <div class="reader-hero-img" id="reader-img">[ Article Image ]</div>
+      <div class="reader-body">
+        <div class="category-tag" id="reader-category"></div>
+        <h1 id="reader-title"></h1>
+        <div class="byline" id="reader-byline"></div>
+        <div id="reader-text-area">
+          <div class="reader-fade" id="reader-preview">
+            <div class="reader-article-text" id="reader-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="reader-paywall" id="reader-paywall">
+        <div class="lock-icon">&#128274;</div>
+        <h3>Subscribe to Keep Reading</h3>
+        <p>You've reached the end of your free preview. Become a Patriot Member for unlimited access to all articles, exclusive analysis, and premium commentary.</p>
+        <button class="btn-subscribe" onclick="closeReader(); openModal('subscribe-modal');">Subscribe &mdash; Starting at $5/mo</button>
+        <div class="login-link">Already a subscriber? <a href="#" onclick="closeReader(); openModal('login-modal'); return false;">Log in</a></div>
+        <div class="free-count" id="reader-free-count"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe Modal -->
+  <div class="modal-overlay" id="subscribe-modal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('subscribe-modal')">&times;</button>
+      <div class="modal-header">
+        <h2>Become a Patriot Member</h2>
+        <p>Unlimited access to exclusive content &amp; commentary</p>
+      </div>
+      <div class="modal-body">
+        <div id="subscribe-form">
+          <label>Email Address</label>
+          <input type="email" id="sub-email" placeholder="your@email.com" required>
+          <label>Membership Plan</label>
+          <select id="modal-plan">
+            <option value="monthly">Monthly — $5/month</option>
+            <option value="annual" selected>Annual — $39/year (Save 35%)</option>
+            <option value="founding">Founding Member — $99/year</option>
+          </select>
+          <p style="font-size:0.7rem; color:#999; margin-bottom:14px;">You'll be redirected to Stripe's secure checkout to complete payment.</p>
+          <button class="btn-subscribe" id="btn-checkout" onclick="handleSubscribe()">Subscribe Now</button>
+          <div id="subscribe-status" style="font-size:0.8rem; text-align:center; margin-top:10px; color:var(--accent);"></div>
+          <p style="font-size:0.7rem; color:#999; margin-top:12px; text-align:center;">Cancel anytime. No questions asked.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('login-modal')">&times;</button>
+      <div class="modal-header">
+        <h2>Welcome Back</h2>
+        <p>Log in to your Patriot account</p>
+      </div>
+      <div class="modal-body">
+        <label>Email Address</label>
+        <input type="email" id="login-email" placeholder="your@email.com" required>
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+        <div id="login-error" style="color:var(--accent); font-size:0.8rem; margin-bottom:10px; display:none;"></div>
+        <button class="btn-subscribe" id="btn-login" onclick="handleLogin()">Log In</button>
+        <p style="font-size:0.75rem; text-align:center; margin-top:12px;">
+          <a href="#" style="color:var(--accent);" onclick="handleForgotPassword(); return false;">Forgot password?</a>
+          &nbsp;&middot;&nbsp;
+          <a href="#" onclick="closeModal('login-modal'); openModal('signup-modal'); return false;" style="color:var(--accent);">Create account</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal-overlay" id="signup-modal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('signup-modal')">&times;</button>
+      <div class="modal-header" style="background: linear-gradient(135deg, #8B0000 0%, #5a0000 100%);">
+        <h2>Create Your Account</h2>
+        <p>Join The American Patriot community</p>
+      </div>
+      <div class="modal-body">
+        <label>Full Name</label>
+        <input type="text" id="signup-name" placeholder="Your full name" required>
+        <label>Email Address</label>
+        <input type="email" id="signup-email" placeholder="your@email.com" required>
+        <label>Password</label>
+        <input type="password" id="signup-password" placeholder="Create a password (min 6 chars)" required>
+        <label>Confirm Password</label>
+        <input type="password" id="signup-confirm" placeholder="Confirm your password" required>
+        <div id="signup-error" style="color:var(--accent); font-size:0.8rem; margin-bottom:10px; display:none;"></div>
+        <button class="btn-subscribe" id="btn-signup" onclick="handleSignup()">Create Account</button>
+        <p style="font-size:0.75rem; text-align:center; margin-top:12px;">
+          Already have an account?
+          <a href="#" onclick="closeModal('signup-modal'); openModal('login-modal'); return false;" style="color:var(--accent);">Log in</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Comment Modal -->
+  <div class="modal-overlay" id="top-comment-modal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('top-comment-modal')">&times;</button>
+      <div class="modal-header" style="background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);">
+        <h2 style="display:flex;align-items:center;justify-content:center;gap:8px;">&#128204; Pin Your Comment</h2>
+        <p>Your comment stays at the top for 24 hours</p>
+      </div>
+      <div class="modal-body">
+        <label>Your Comment</label>
+        <textarea id="top-comment-text" placeholder="Write your pinned comment here..." style="width:100%;min-height:100px;padding:10px;border:1px solid var(--border);border-radius:4px;font-family:var(--sans);font-size:0.85rem;margin-bottom:14px;resize:vertical;background:var(--bg);color:var(--primary);"></textarea>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding:12px;background:var(--light-bg);border-radius:6px;">
+          <span style="font-size:0.85rem;font-weight:600;">Top Comment Placement</span>
+          <span style="font-family:var(--serif);font-size:1.3rem;font-weight:900;color:var(--gold);">$5.00</span>
+        </div>
+        <p style="font-size:0.7rem;color:#999;margin-bottom:14px;">Your comment will be pinned with a gold badge at the top of the comments section for 24 hours. Payment processed securely via Stripe.</p>
+        <button class="btn-subscribe" style="background:var(--gold);color:#1a1a2e;" onclick="handleTopComment()">Pay $5 &amp; Pin Comment</button>
+        <div id="top-comment-status" style="font-size:0.8rem;text-align:center;margin-top:10px;color:var(--accent);"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" style="display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%); background:#333; color:#fff; padding:12px 24px; border-radius:6px; font-size:0.85rem; z-index:10001; box-shadow:0 4px 12px rgba(0,0,0,0.3); transition:opacity 0.3s;"></div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    // =============================================
+    // Firebase Configuration
+    // =============================================
+    const firebaseConfig = {
+      apiKey: "AIzaSyDhELjmgoX_N6XhmEaP-Wz1hPdjdSyQC5o",
+      authDomain: "remotejobs-db8b0.firebaseapp.com",
+      projectId: "remotejobs-db8b0",
+      storageBucket: "remotejobs-db8b0.firebasestorage.app",
+      messagingSenderId: "233544659754",
+      appId: "1:233544659754:web:3335db4632deb720f6a453"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    // =============================================
+    // Toast Notifications
+    // =============================================
+    function showToast(msg, duration = 3000) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.style.display = 'block';
+      toast.style.opacity = '1';
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.style.display = 'none', 300);
+      }, duration);
+    }
+
+    // =============================================
+    // Dark Mode
+    // =============================================
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.dark-toggle');
+      if (html.getAttribute('data-theme') === 'dark') {
+        html.removeAttribute('data-theme');
+        btn.textContent = 'Dark';
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        btn.textContent = 'Light';
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.querySelector('.dark-toggle').textContent = 'Light';
+    }
+
+    // =============================================
+    // Modal Controls
+    // =============================================
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeModal(overlay.id);
+      });
+    });
+
+    // =============================================
+    // Firebase Auth — Signup
+    // =============================================
+    async function handleSignup() {
+      const name = document.getElementById('signup-name').value.trim();
+      const email = document.getElementById('signup-email').value.trim();
+      const password = document.getElementById('signup-password').value;
+      const confirm = document.getElementById('signup-confirm').value;
+      const errorEl = document.getElementById('signup-error');
+      const btn = document.getElementById('btn-signup');
+
+      errorEl.style.display = 'none';
+
+      if (!name) return showError(errorEl, 'Please enter your name.');
+      if (!email) return showError(errorEl, 'Please enter your email.');
+      if (password.length < 6) return showError(errorEl, 'Password must be at least 6 characters.');
+      if (password !== confirm) return showError(errorEl, 'Passwords do not match.');
+
+      btn.textContent = 'Creating account...';
+      btn.disabled = true;
+
+      try {
+        const cred = await auth.createUserWithEmailAndPassword(email, password);
+        await cred.user.updateProfile({ displayName: name });
+        showToast('Account created! Welcome, ' + name);
+        closeModal('signup-modal');
+        updateAuthUI(cred.user);
+      } catch (err) {
+        showError(errorEl, getAuthError(err.code));
+      } finally {
+        btn.textContent = 'Create Account';
+        btn.disabled = false;
+      }
+    }
+
+    // =============================================
+    // Firebase Auth — Login
+    // =============================================
+    async function handleLogin() {
+      const email = document.getElementById('login-email').value.trim();
+      const password = document.getElementById('login-password').value;
+      const errorEl = document.getElementById('login-error');
+      const btn = document.getElementById('btn-login');
+
+      errorEl.style.display = 'none';
+
+      if (!email || !password) return showError(errorEl, 'Please enter email and password.');
+
+      btn.textContent = 'Logging in...';
+      btn.disabled = true;
+
+      try {
+        const cred = await auth.signInWithEmailAndPassword(email, password);
+        showToast('Welcome back, ' + (cred.user.displayName || cred.user.email));
+        closeModal('login-modal');
+        updateAuthUI(cred.user);
+      } catch (err) {
+        showError(errorEl, getAuthError(err.code));
+      } finally {
+        btn.textContent = 'Log In';
+        btn.disabled = false;
+      }
+    }
+
+    // =============================================
+    // Firebase Auth — Forgot Password
+    // =============================================
+    async function handleForgotPassword() {
+      const email = document.getElementById('login-email').value.trim();
+      if (!email) {
+        showError(document.getElementById('login-error'), 'Enter your email above, then click Forgot password.');
+        return;
+      }
+      try {
+        await auth.sendPasswordResetEmail(email);
+        showToast('Password reset email sent to ' + email);
+      } catch (err) {
+        showError(document.getElementById('login-error'), getAuthError(err.code));
+      }
+    }
+
+    // =============================================
+    // Firebase Auth — Logout
+    // =============================================
+    async function handleLogout() {
+      await auth.signOut();
+      updateAuthUI(null);
+      showToast('You have been logged out.');
+    }
+
+    // =============================================
+    // Auth State Observer
+    // =============================================
+    auth.onAuthStateChanged(user => {
+      updateAuthUI(user);
+    });
+
+    function updateAuthUI(user) {
+      const linksEl = document.querySelector('.top-bar-links');
+      // Remove existing auth links
+      linksEl.querySelectorAll('.auth-link').forEach(el => el.remove());
+
+      if (user) {
+        // Logged in — show user info and logout
+        const userLink = document.createElement('a');
+        userLink.className = 'auth-link';
+        userLink.href = '#';
+        userLink.textContent = user.displayName || user.email.split('@')[0];
+        userLink.style.fontWeight = '700';
+        userLink.onclick = (e) => e.preventDefault();
+
+        const logoutLink = document.createElement('a');
+        logoutLink.className = 'auth-link';
+        logoutLink.href = '#';
+        logoutLink.textContent = 'Log Out';
+        logoutLink.onclick = (e) => { e.preventDefault(); handleLogout(); };
+
+        // Hide login/subscribe links
+        linksEl.querySelectorAll('a').forEach(a => {
+          if (a.textContent === 'Log In') a.style.display = 'none';
+        });
+
+        // Insert before dark toggle
+        const toggle = linksEl.querySelector('.dark-toggle');
+        linksEl.insertBefore(userLink, toggle);
+        linksEl.insertBefore(logoutLink, toggle);
+      } else {
+        // Logged out — show login link again
+        linksEl.querySelectorAll('a').forEach(a => {
+          if (a.textContent === 'Log In') a.style.display = '';
+        });
+      }
+    }
+
+    function showError(el, msg) {
+      el.textContent = msg;
+      el.style.display = 'block';
+    }
+
+    function getAuthError(code) {
+      const errors = {
+        'auth/email-already-in-use': 'An account with this email already exists.',
+        'auth/invalid-email': 'Please enter a valid email address.',
+        'auth/user-not-found': 'No account found with this email.',
+        'auth/wrong-password': 'Incorrect password. Try again.',
+        'auth/weak-password': 'Password must be at least 6 characters.',
+        'auth/too-many-requests': 'Too many attempts. Please wait and try again.',
+        'auth/invalid-credential': 'Invalid email or password.',
+        'auth/network-request-failed': 'Network error. Check your connection.',
+      };
+      return errors[code] || 'An error occurred. Please try again.';
+    }
+
+    // =============================================
+    // Stripe — Subscription Checkout
+    // =============================================
+    let selectedPlan = 'annual';
+
+    function selectPlan(el, plan) {
+      document.querySelectorAll('.price-option').forEach(p => p.classList.remove('featured'));
+      el.classList.add('featured');
+      selectedPlan = plan;
+      const select = document.getElementById('modal-plan');
+      if (select) select.value = plan;
+    }
+
+    async function handleSubscribe() {
+      const email = document.getElementById('sub-email').value.trim();
+      const plan = document.getElementById('modal-plan').value;
+      const statusEl = document.getElementById('subscribe-status');
+      const btn = document.getElementById('btn-checkout');
+
+      if (!email) {
+        statusEl.textContent = 'Please enter your email address.';
+        return;
+      }
+
+      btn.textContent = 'Redirecting to checkout...';
+      btn.disabled = true;
+      statusEl.textContent = '';
+
+      try {
+        const res = await fetch('/api/create-checkout-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ plan, email })
+        });
+        const data = await res.json();
+
+        if (data.demo) {
+          statusEl.textContent = data.message;
+          showToast('Demo mode: ' + plan + ' plan selected');
+        } else if (data.url) {
+          window.location.href = data.url;
+        } else {
+          statusEl.textContent = data.error || 'Something went wrong.';
+        }
+      } catch (err) {
+        statusEl.textContent = 'Connection error. Please try again.';
+      } finally {
+        btn.textContent = 'Subscribe Now';
+        btn.disabled = false;
+      }
+    }
+
+    // =============================================
+    // Stripe — Donation
+    // =============================================
+    let donationAmount = 25;
+
+    function selectDonation(el, amount) {
+      document.querySelectorAll('.donate-tier').forEach(t => t.classList.remove('active'));
+      el.classList.add('active');
+      donationAmount = amount;
+      document.getElementById('custom-donation').value = '';
+    }
+
+    async function processDonation() {
+      const custom = document.getElementById('custom-donation').value;
+      const amount = custom ? parseInt(custom) : donationAmount;
+
+      if (!amount || amount < 1) {
+        showToast('Please enter a valid donation amount.');
+        return;
+      }
+
+      const btn = document.querySelector('.btn-donate');
+      btn.textContent = 'Processing...';
+      btn.disabled = true;
+
+      try {
+        const user = auth.currentUser;
+        const res = await fetch('/api/create-donation-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ amount, email: user ? user.email : undefined })
+        });
+        const data = await res.json();
+
+        if (data.demo) {
+          showToast(data.message);
+        } else if (data.url) {
+          window.location.href = data.url;
+        } else {
+          showToast(data.error || 'Something went wrong.');
+        }
+      } catch (err) {
+        showToast('Connection error. Please try again.');
+      } finally {
+        btn.textContent = 'Donate Now';
+        btn.disabled = false;
+      }
+    }
+
+    // =============================================
+    // Author Database (30 Pen Names)
+    // =============================================
+    const AUTHORS = {
+      'James T. Harrison': { title: 'Chief Political Correspondent', photo: 'https://i.pravatar.cc/80?img=11' },
+      'Sarah Mitchell': { title: 'National Security Editor', photo: 'https://i.pravatar.cc/80?img=5' },
+      'Robert J. Clark': { title: 'Congressional Bureau Chief', photo: 'https://i.pravatar.cc/80?img=12' },
+      'Katherine Adams': { title: 'Polling & Data Analyst', photo: 'https://i.pravatar.cc/80?img=9' },
+      'Daniel Webster': { title: 'Education Policy Reporter', photo: 'https://i.pravatar.cc/80?img=14' },
+      'Marcus Reeves': { title: 'Border & Immigration Correspondent', photo: 'https://i.pravatar.cc/80?img=15' },
+      'Rebecca Stone': { title: 'Capitol Hill Reporter', photo: 'https://i.pravatar.cc/80?img=16' },
+      'William Drake': { title: 'Energy & Environment Editor', photo: 'https://i.pravatar.cc/80?img=17' },
+      'Catherine Bell': { title: 'Legal Affairs Correspondent', photo: 'https://i.pravatar.cc/80?img=20' },
+      'Thomas Grant': { title: 'Economics Editor', photo: 'https://i.pravatar.cc/80?img=51' },
+      'Angela Torres': { title: 'Campaign Trail Reporter', photo: 'https://i.pravatar.cc/80?img=23' },
+      'Dr. Patricia Owens': { title: 'Education Policy Fellow', photo: 'https://i.pravatar.cc/80?img=24' },
+      'Sen. James McAllister': { title: 'U.S. Senator (R-TX)', photo: 'https://i.pravatar.cc/80?img=53' },
+      'Mark Davidson': { title: 'Constitutional Attorney', photo: 'https://i.pravatar.cc/80?img=52' },
+      'Laura Ingram-West': { title: 'Media Analyst & Commentator', photo: 'https://i.pravatar.cc/80?img=25' },
+      'Rev. Daniel Brooks': { title: 'Faith & Culture Columnist', photo: 'https://i.pravatar.cc/80?img=54' },
+      'Col. Richard Hayes': { title: 'Defense & Veterans Affairs', photo: 'https://i.pravatar.cc/80?img=33' },
+      'Victoria Lane': { title: 'White House Correspondent', photo: 'https://i.pravatar.cc/80?img=32' },
+      'Charles Whitfield': { title: 'Senior Political Analyst', photo: 'https://i.pravatar.cc/80?img=55' },
+      'Margaret Sullivan': { title: 'Foreign Policy Editor', photo: 'https://i.pravatar.cc/80?img=44' },
+      'Patrick O\'Brien': { title: 'Law Enforcement Reporter', photo: 'https://i.pravatar.cc/80?img=56' },
+      'Elizabeth Monroe': { title: 'Family Values Correspondent', photo: 'https://i.pravatar.cc/80?img=47' },
+      'Hank Morrison': { title: 'Rural America Bureau Chief', photo: 'https://i.pravatar.cc/80?img=57' },
+      'Diane Crawford': { title: 'Healthcare Policy Analyst', photo: 'https://i.pravatar.cc/80?img=43' },
+      'Jack Townsend': { title: 'Second Amendment Reporter', photo: 'https://i.pravatar.cc/80?img=58' },
+      'Rachel Covington': { title: 'Tech & Censorship Analyst', photo: 'https://i.pravatar.cc/80?img=45' },
+      'Samuel Bradford': { title: 'Investigative Correspondent', photo: 'https://i.pravatar.cc/80?img=59' },
+      'Christina Hartley': { title: 'States Rights Reporter', photo: 'https://i.pravatar.cc/80?img=48' },
+      'Douglas Kessler': { title: 'Fiscal Policy Editor', photo: 'https://i.pravatar.cc/80?img=60' },
+      'The Editorial Board': { title: 'The American Patriot', photo: 'https://i.pravatar.cc/80?img=68' }
+    };
+
+    const AUTHOR_NAMES = Object.keys(AUTHORS).filter(n => n !== 'The Editorial Board');
+
+    function getRandomAuthor() {
+      return AUTHOR_NAMES[Math.floor(Math.random() * AUTHOR_NAMES.length)];
+    }
+
+    function getAuthorPhoto(name) {
+      const author = AUTHORS[name];
+      return author ? author.photo : 'https://i.pravatar.cc/80?u=' + encodeURIComponent(name);
+    }
+
+    function getAuthorTitle(name) {
+      const author = AUTHORS[name];
+      return author ? author.title : 'Contributing Writer';
+    }
+
+    // =============================================
+    // Category Filter (nav links)
+    // =============================================
+    function filterByCategory(category) {
+      firestore.collection('articles')
+        .where('category', '==', category)
+        .get()
+        .then(snapshot => {
+          const articles = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+          articles.sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || ''));
+          if (articles.length > 0) {
+            const section = document.getElementById('latest-news');
+            section.style.display = 'block';
+            section.querySelector('h2').textContent = category;
+            renderDynamicArticles(articles);
+            section.scrollIntoView({ behavior: 'smooth' });
+          } else {
+            showToast('No articles found in ' + category + ' yet.');
+          }
+        })
+        .catch(() => {
+          showToast('Could not load ' + category + ' articles.');
+        });
+    }
+
+    // =============================================
+    // Article Reader + Paywall
+    // =============================================
+    const FREE_ARTICLES = 2; // Non-logged-in users get 2 free reads
+    let articlesRead = JSON.parse(localStorage.getItem('tap_reads') || '[]');
+
+    function openArticle(data) {
+      const user = auth.currentUser;
+      const isSubscriber = false; // TODO: check subscription status from Firestore
+
+      // Track reads
+      if (!user && !articlesRead.includes(data.title)) {
+        articlesRead.push(data.title);
+        localStorage.setItem('tap_reads', JSON.stringify(articlesRead));
+      }
+
+      const readerEl = document.getElementById('reader-overlay');
+      document.getElementById('reader-category').textContent = data.category || 'Opinion';
+      document.getElementById('reader-title').textContent = data.title;
+      document.getElementById('reader-byline').innerHTML = 'By <strong>' + escapeHtml(data.author || 'Staff Writer') + '</strong> &middot; ' + (data.date || 'April 7, 2026');
+
+      // Set image
+      const imgEl = document.getElementById('reader-img');
+      if (data.imageUrl) {
+        imgEl.style.backgroundImage = 'url(' + data.imageUrl + ')';
+        imgEl.style.backgroundSize = 'cover';
+        imgEl.style.backgroundPosition = 'center';
+        imgEl.textContent = '';
+      } else {
+        imgEl.style.backgroundImage = '';
+        imgEl.textContent = '[ Article Image ]';
+      }
+
+      // Build article body - show preview text then paywall
+      const fullText = data.body || data.summary || '';
+      const paragraphs = fullText.split('\n').filter(p => p.trim());
+
+      // If no real body, generate preview paragraphs from summary
+      let displayParagraphs;
+      if (paragraphs.length <= 1) {
+        displayParagraphs = [
+          data.summary || '',
+          'This is a developing story. Our editorial team is tracking the latest details and will provide in-depth analysis as more information becomes available.',
+          'The implications of this development extend far beyond the immediate headlines. Our team of conservative commentators and policy experts will break down what this means for everyday Americans and the future of the republic.',
+          'For the full analysis, including expert commentary and exclusive insights from our network of Washington insiders and policy analysts, subscribe to The American Patriot.',
+          'Our subscribers receive unlimited access to all premium content, exclusive newsletters, and early access to breaking commentary from our award-winning editorial team.'
+        ];
+      } else {
+        displayParagraphs = paragraphs;
+      }
+
+      const textEl = document.getElementById('reader-text');
+      const previewEl = document.getElementById('reader-preview');
+      const paywallEl = document.getElementById('reader-paywall');
+      const freeCountEl = document.getElementById('reader-free-count');
+      const textArea = document.getElementById('reader-text-area');
+
+      // Decide: show full or paywall
+      const showFull = user || (!data.premium && articlesRead.length <= FREE_ARTICLES);
+
+      if (showFull) {
+        // Show full article
+        textEl.innerHTML = displayParagraphs.map(p => '<p>' + escapeHtml(p) + '</p>').join('');
+        previewEl.className = 'reader-article-text';
+        previewEl.id = 'reader-preview';
+        paywallEl.style.display = 'none';
+        textArea.innerHTML = '<div class="reader-article-text" id="reader-preview">' + displayParagraphs.map(p => '<p>' + escapeHtml(p) + '</p>').join('') + '</div>';
+      } else {
+        // Show preview + paywall
+        const previewText = displayParagraphs.slice(0, 2).map(p => '<p>' + escapeHtml(p) + '</p>').join('');
+        textArea.innerHTML = '<div class="reader-fade"><div class="reader-article-text">' + previewText + '</div></div>';
+        paywallEl.style.display = 'block';
+
+        if (!user) {
+          const remaining = Math.max(0, FREE_ARTICLES - articlesRead.length);
+          freeCountEl.textContent = remaining > 0
+            ? 'You have ' + remaining + ' free article' + (remaining !== 1 ? 's' : '') + ' remaining.'
+            : 'You\'ve used all your free articles.';
+        } else {
+          freeCountEl.textContent = '';
+        }
+      }
+
+      readerEl.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeReader() {
+      document.getElementById('reader-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Close reader on overlay click
+    document.getElementById('reader-overlay').addEventListener('click', (e) => {
+      if (e.target.id === 'reader-overlay') closeReader();
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeReader();
+    });
+
+    // Make all static article cards clickable
+    function wireArticleClicks() {
+      // Hero article
+      document.querySelectorAll('.hero-main').forEach(el => {
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', (e) => {
+          if (e.target.closest('.share-bar') || e.target.closest('button')) return;
+          const h1 = el.querySelector('h1');
+          const summary = el.querySelector('.summary');
+          const byline = el.querySelector('.byline');
+          const cat = el.querySelector('.category-tag');
+          openArticle({
+            title: h1 ? h1.textContent : '',
+            summary: summary ? summary.textContent.trim() : '',
+            author: byline ? byline.textContent.replace('By ', '').split('·')[0].trim() : 'Staff Writer',
+            category: cat ? cat.textContent : 'Politics',
+            date: byline ? byline.textContent.split('·')[1]?.trim() : '',
+            premium: false
+          });
+        });
+      });
+
+      // Article cards
+      document.querySelectorAll('.article-card').forEach(el => {
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', (e) => {
+          if (e.target.closest('.share-bar') || e.target.closest('button')) return;
+          const h3 = el.querySelector('h3');
+          const p = el.querySelector('p');
+          const byline = el.querySelector('.byline');
+          const cat = el.querySelector('.category-tag');
+          const isPremium = !!el.querySelector('.premium-badge');
+          openArticle({
+            title: h3 ? h3.textContent.replace(/\s*Premium$/, '') : '',
+            summary: p ? p.textContent : '',
+            author: byline ? byline.textContent.replace('By ', '').split('·')[0].trim() : 'Staff Writer',
+            category: cat ? cat.textContent : 'Politics',
+            date: byline ? byline.textContent.split('·')[1]?.trim() : '',
+            premium: isPremium
+          });
+        });
+      });
+
+      // Sidebar items
+      document.querySelectorAll('.sidebar-item').forEach(el => {
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', () => {
+          const h3 = el.querySelector('h3');
+          const p = el.querySelector('p');
+          const byline = el.querySelector('.byline');
+          openArticle({
+            title: h3 ? h3.textContent : '',
+            summary: p ? p.textContent : '',
+            author: byline ? byline.textContent.replace('By ', '').trim() : 'Staff Writer',
+            category: 'Politics',
+            premium: false
+          });
+        });
+      });
+
+      // Opinion cards
+      document.querySelectorAll('.opinion-card').forEach(el => {
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', (e) => {
+          if (e.target.closest('.share-bar') || e.target.closest('button')) return;
+          const h3 = el.querySelector('h3');
+          const p = el.querySelector('p');
+          const name = el.querySelector('.author-name');
+          const title = el.querySelector('.author-title');
+          openArticle({
+            title: h3 ? h3.textContent : '',
+            summary: p ? p.textContent : '',
+            author: name ? name.textContent : 'Staff Writer',
+            category: 'Opinion',
+            premium: false
+          });
+        });
+      });
+    }
+
+    // =============================================
+    // Social Sharing
+    // =============================================
+    function shareOnX(title) {
+      const url = encodeURIComponent(window.location.href);
+      const text = encodeURIComponent(title + ' — The American Patriot');
+      window.open('https://twitter.com/intent/tweet?url=' + url + '&text=' + text, '_blank', 'width=600,height=400');
+    }
+
+    function shareOnFacebook(title) {
+      const url = encodeURIComponent(window.location.href);
+      window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank', 'width=600,height=400');
+    }
+
+    function shareViaEmail(title) {
+      const url = window.location.href;
+      const subject = encodeURIComponent(title + ' — The American Patriot');
+      const body = encodeURIComponent('Check out this article from The American Patriot:\n\n' + title + '\n\n' + url);
+      window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+    }
+
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        showToast('Link copied to clipboard!');
+      }).catch(() => {
+        // Fallback
+        const input = document.createElement('input');
+        input.value = window.location.href;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        showToast('Link copied to clipboard!');
+      });
+    }
+
+    // Wire up share buttons on page load
+    function wireShareButtons() {
+      document.querySelectorAll('.share-bar').forEach(bar => {
+        const heading = bar.closest('.hero-main, .article-card, .opinion-card');
+        const titleEl = heading ? heading.querySelector('h1, h3') : null;
+        const title = titleEl ? titleEl.textContent.trim() : 'The American Patriot';
+
+        const btns = bar.querySelectorAll('.share-btn');
+        if (btns[0]) btns[0].onclick = () => shareOnX(title);
+        if (btns[1]) btns[1].onclick = () => shareOnFacebook(title);
+        if (btns[2]) btns[2].onclick = () => shareViaEmail(title);
+        if (btns[3]) btns[3].onclick = () => copyLink();
+      });
+    }
+
+    // =============================================
+    // Dynamic Articles from API
+    // =============================================
+    const firestore = firebase.firestore();
+
+    async function loadArticles() {
+      try {
+        // Try Firestore client-side first
+        const snapshot = await firestore.collection('articles').orderBy('createdAt', 'desc').get();
+        const articles = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        if (articles.length > 0) {
+          renderDynamicArticles(articles);
+        }
+      } catch (err) {
+        // Fall back to server API
+        try {
+          const res = await fetch('/api/articles');
+          const articles = await res.json();
+          if (articles.length > 0) renderDynamicArticles(articles);
+        } catch (e) {
+          console.log('Using static articles (API unavailable)');
+        }
+      }
+    }
+
+    function renderDynamicArticles(articles) {
+      const dynamicGrid = document.getElementById('dynamic-articles');
+      if (!dynamicGrid || articles.length === 0) return;
+      document.getElementById('latest-news').style.display = 'block';
+
+      dynamicGrid.innerHTML = '';
+      articles.forEach(article => {
+        const card = document.createElement('article');
+        card.className = 'article-card';
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('.share-bar') || e.target.closest('button')) return;
+          openArticle(article);
+        });
+        card.innerHTML = `
+          <div class="card-image" ${article.imageUrl ? 'style="background-image:url(' + article.imageUrl + ');background-size:cover;background-position:center;"' : ''}></div>
+          <div class="category-tag">${escapeHtml(article.category)}</div>
+          <h3>${escapeHtml(article.title)}${article.premium ? ' <span class="premium-badge">Premium</span>' : ''}</h3>
+          <p>${escapeHtml(article.summary)}</p>
+          <div class="byline" style="display:flex;align-items:center;gap:8px;">
+            <img src="${getAuthorPhoto(article.author)}" style="width:24px;height:24px;border-radius:50%;" alt="">
+            By ${escapeHtml(article.author)} &middot; ${article.date}
+          </div>
+          <div class="share-bar" style="margin-top:8px;">
+            <span>Share</span>
+            <button class="share-btn" title="Share on X" onclick="shareOnX('${escapeHtml(article.title).replace(/'/g, "\\'")}')">X</button>
+            <button class="share-btn" title="Share on Facebook" onclick="shareOnFacebook('${escapeHtml(article.title).replace(/'/g, "\\'")}')">f</button>
+            <button class="share-btn" title="Share via Email" onclick="shareViaEmail('${escapeHtml(article.title).replace(/'/g, "\\'")}')">@</button>
+            <button class="share-btn" title="Copy Link" onclick="copyLink()">&#128279;</button>
+          </div>
+        `;
+        dynamicGrid.appendChild(card);
+      });
+    }
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str || '';
+      return div.innerHTML;
+    }
+
+    // =============================================
+    // Newsletter
+    // =============================================
+    function subscribeNewsletter(form) {
+      const email = form.querySelector('input[type="email"]').value;
+      showToast('Thank you for subscribing! ' + email + ' has been added to our mailing list.');
+      form.reset();
+    }
+
+    // =============================================
+    // Smooth Scroll
+    // =============================================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href') === '#') return;
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // =============================================
+    // Check URL params for post-checkout status
+    // =============================================
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('subscribed')) {
+      showToast('Subscription successful! Welcome to The American Patriot.');
+      window.history.replaceState({}, '', '/');
+    }
+    if (urlParams.get('donated')) {
+      showToast('Thank you for your generous donation!');
+      window.history.replaceState({}, '', '/');
+    }
+    if (urlParams.get('canceled')) {
+      showToast('Payment was canceled.');
+      window.history.replaceState({}, '', '/');
+    }
+
+    // =============================================
+    // Comments System
+    // =============================================
+    let comments = JSON.parse(localStorage.getItem('tap_comments') || '[]');
+
+    function saveComments() {
+      localStorage.setItem('tap_comments', JSON.stringify(comments));
+    }
+
+    function buildCommentForm() {
+      const area = document.getElementById('comment-form-area');
+      const user = auth.currentUser;
+
+      if (!user) {
+        area.innerHTML = `
+          <div class="comment-login-prompt">
+            <a href="#" onclick="openModal('login-modal'); return false;">Log in</a> or
+            <a href="#" onclick="openModal('signup-modal'); return false;">create an account</a>
+            to join the discussion.
+          </div>`;
+        return;
+      }
+
+      const initials = (user.displayName || user.email.split('@')[0]).substring(0, 2).toUpperCase();
+      area.innerHTML = `
+        <div class="comment-form">
+          <div class="comment-form-header">
+            <div class="comment-avatar has-user">${initials}</div>
+            <span style="font-size:0.85rem;font-weight:600;">Commenting as ${user.displayName || user.email}</span>
+          </div>
+          <textarea id="comment-input" placeholder="Share your thoughts on this article..."></textarea>
+          <div class="comment-form-actions">
+            <div class="top-comment-toggle">
+              <input type="checkbox" id="pin-checkbox">
+              <label for="pin-checkbox">Pin to top</label>
+              <span class="price">$5</span>
+            </div>
+            <button class="btn-comment" onclick="postComment()">Post Comment</button>
+          </div>
+        </div>`;
+    }
+
+    function postComment() {
+      const input = document.getElementById('comment-input');
+      const text = input.value.trim();
+      const pinCheckbox = document.getElementById('pin-checkbox');
+
+      if (!text) {
+        showToast('Please write a comment first.');
+        return;
+      }
+
+      const user = auth.currentUser;
+      if (!user) {
+        openModal('login-modal');
+        return;
+      }
+
+      if (pinCheckbox && pinCheckbox.checked) {
+        // Store comment text and open payment modal
+        document.getElementById('top-comment-text').value = text;
+        openModal('top-comment-modal');
+        return;
+      }
+
+      const comment = {
+        id: 'c_' + Date.now(),
+        text: text,
+        author: user.displayName || user.email.split('@')[0],
+        email: user.email,
+        timestamp: Date.now(),
+        likes: 0,
+        pinned: false,
+        pinnedUntil: null
+      };
+
+      comments.unshift(comment);
+      saveComments();
+      input.value = '';
+      renderComments();
+      showToast('Comment posted!');
+    }
+
+    async function handleTopComment() {
+      const text = document.getElementById('top-comment-text').value.trim();
+      const statusEl = document.getElementById('top-comment-status');
+      const user = auth.currentUser;
+
+      if (!text) {
+        statusEl.textContent = 'Please write your comment.';
+        return;
+      }
+
+      if (!user) {
+        closeModal('top-comment-modal');
+        openModal('login-modal');
+        return;
+      }
+
+      statusEl.textContent = 'Processing payment...';
+
+      try {
+        const res = await fetch('/api/create-pin-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: user.email })
+        });
+        const data = await res.json();
+
+        if (data.demo) {
+          // Demo mode — pin the comment directly
+          const comment = {
+            id: 'c_' + Date.now(),
+            text: text,
+            author: user.displayName || user.email.split('@')[0],
+            email: user.email,
+            timestamp: Date.now(),
+            likes: 0,
+            pinned: true,
+            pinnedUntil: Date.now() + (24 * 60 * 60 * 1000)
+          };
+          comments.unshift(comment);
+          saveComments();
+          closeModal('top-comment-modal');
+          renderComments();
+          showToast('Comment pinned to the top for 24 hours! (Demo mode — $5 charge simulated)');
+
+          // Clear the comment input too
+          const input = document.getElementById('comment-input');
+          if (input) input.value = '';
+        } else if (data.url) {
+          // Save pending pinned comment in localStorage before redirect
+          localStorage.setItem('tap_pending_pin', JSON.stringify({
+            text: text,
+            author: user.displayName || user.email.split('@')[0],
+            email: user.email
+          }));
+          window.location.href = data.url;
+        }
+      } catch (err) {
+        statusEl.textContent = 'Payment failed. Please try again.';
+      }
+    }
+
+    function likeComment(id) {
+      const user = auth.currentUser;
+      if (!user) {
+        openModal('login-modal');
+        return;
+      }
+
+      const likedKey = 'tap_liked_' + id;
+      if (localStorage.getItem(likedKey)) {
+        showToast('You already liked this comment.');
+        return;
+      }
+
+      const c = comments.find(c => c.id === id);
+      if (c) {
+        c.likes = (c.likes || 0) + 1;
+        localStorage.setItem(likedKey, '1');
+        saveComments();
+        renderComments();
+      }
+    }
+
+    function renderComments() {
+      const sort = document.getElementById('comment-sort').value;
+      const listEl = document.getElementById('comment-list');
+      const pinnedEl = document.getElementById('pinned-comments');
+      const countEl = document.getElementById('comment-count');
+      const now = Date.now();
+
+      // Expire old pins
+      comments.forEach(c => {
+        if (c.pinned && c.pinnedUntil && c.pinnedUntil < now) {
+          c.pinned = false;
+        }
+      });
+      saveComments();
+
+      countEl.textContent = comments.length + ' comment' + (comments.length !== 1 ? 's' : '');
+
+      // Separate pinned and regular
+      const pinned = comments.filter(c => c.pinned);
+      const regular = comments.filter(c => !c.pinned);
+
+      // Sort regular
+      if (sort === 'newest') regular.sort((a, b) => b.timestamp - a.timestamp);
+      else if (sort === 'oldest') regular.sort((a, b) => a.timestamp - b.timestamp);
+      else if (sort === 'popular') regular.sort((a, b) => (b.likes || 0) - (a.likes || 0));
+
+      // Render pinned
+      pinnedEl.innerHTML = pinned.map(c => renderSingleComment(c, true)).join('');
+
+      // Render regular
+      if (regular.length === 0 && pinned.length === 0) {
+        listEl.innerHTML = '<div style="text-align:center;padding:30px;color:#999;font-size:0.85rem;">Be the first to share your thoughts.</div>';
+      } else if (regular.length === 0) {
+        listEl.innerHTML = '';
+      } else {
+        listEl.innerHTML = regular.map(c => renderSingleComment(c, false)).join('');
+      }
+    }
+
+    function renderSingleComment(c, isPinned) {
+      const authorPhoto = getAuthorPhoto(c.author);
+      const avatarHtml = `<img src="${authorPhoto}" style="width:36px;height:36px;border-radius:50%;">`;
+      const timeAgo = getTimeAgo(c.timestamp);
+      const liked = localStorage.getItem('tap_liked_' + c.id);
+
+      if (isPinned) {
+        return `
+          <div class="comment-pinned">
+            <span class="pinned-label">&#128204; Top Comment</span>
+            <div class="comment-item" style="border:none;padding-top:8px;">
+              <div class="comment-avatar has-user" style="background:var(--gold);color:#1a1a2e;">${avatarHtml}</div>
+              <div class="comment-body">
+                <div class="comment-meta">
+                  <span class="comment-author">${escapeHtml(c.author)}</span>
+                  <span class="comment-time">${timeAgo}</span>
+                </div>
+                <div class="comment-text">${escapeHtml(c.text)}</div>
+                <div class="comment-actions">
+                  <button class="comment-action-btn" onclick="likeComment('${c.id}')" ${liked ? 'style="color:var(--accent);"' : ''}>
+                    ${liked ? '&#10084;' : '&#9825;'} <span class="count">${c.likes || 0}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>`;
+      }
+
+      return `
+        <div class="comment-item">
+          <div class="comment-avatar has-user">${avatarHtml}</div>
+          <div class="comment-body">
+            <div class="comment-meta">
+              <span class="comment-author">${escapeHtml(c.author)}</span>
+              <span class="comment-time">${timeAgo}</span>
+            </div>
+            <div class="comment-text">${escapeHtml(c.text)}</div>
+            <div class="comment-actions">
+              <button class="comment-action-btn" onclick="likeComment('${c.id}')" ${liked ? 'style="color:var(--accent);"' : ''}>
+                ${liked ? '&#10084;' : '&#9825;'} <span class="count">${c.likes || 0}</span>
+              </button>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function getTimeAgo(ts) {
+      const diff = Date.now() - ts;
+      const mins = Math.floor(diff / 60000);
+      if (mins < 1) return 'just now';
+      if (mins < 60) return mins + 'm ago';
+      const hrs = Math.floor(mins / 60);
+      if (hrs < 24) return hrs + 'h ago';
+      const days = Math.floor(hrs / 24);
+      return days + 'd ago';
+    }
+
+    // Check for pending pinned comment after Stripe redirect
+    function checkPendingPin() {
+      const pending = localStorage.getItem('tap_pending_pin');
+      if (pending && urlParams.get('donated')) {
+        const data = JSON.parse(pending);
+        const comment = {
+          id: 'c_' + Date.now(),
+          text: data.text,
+          author: data.author,
+          email: data.email,
+          timestamp: Date.now(),
+          likes: 0,
+          pinned: true,
+          pinnedUntil: Date.now() + (24 * 60 * 60 * 1000)
+        };
+        comments.unshift(comment);
+        saveComments();
+        localStorage.removeItem('tap_pending_pin');
+        showToast('Your comment has been pinned to the top for 24 hours!');
+      }
+    }
+
+    // =============================================
+    // Initialize
+    // =============================================
+    wireShareButtons();
+    wireArticleClicks();
+    loadArticles();
+    checkPendingPin();
+    buildCommentForm();
+    renderComments();
+
+    // Rebuild comment form when auth state changes
+    auth.onAuthStateChanged(() => {
+      buildCommentForm();
+    });
+  </script>
+
+</body>
+</html>
