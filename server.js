@@ -5,7 +5,7 @@ const admin = require('firebase-admin');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
-const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
+const BASE_URL = process.env.BASE_URL || 'https://american-patriot.onrender.com';
 
 // --- Firebase Admin Setup ---
 // Initialize with project ID (uses Application Default Credentials or service account)
